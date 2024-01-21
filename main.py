@@ -76,4 +76,5 @@ while True:
         print("|/       (_______)(_______)(_______/|/   \__/    (_______)|/       |/       ")
         time.sleep(0.5)
         break
-
+    else:
+        print("War.!Unknow command please ask for zj or input askzj")
