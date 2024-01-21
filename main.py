@@ -41,13 +41,24 @@ while True:
     if len(user) >= 1 and user[0]=="ls":
         print(os.listdir())
 
-
-
     elif len(user) == 0:
         continue
 
     elif user[0]=="clear":
         os.system('cls')
+
+    elif user[0]=="cd":
+            try:
+                os.chdir(allpath+r"\\"+user[1])
+            except Exception as r:
+                try:
+                    os.chdir(user[1])
+                except Exception as e:
+                    print(e)
+                    print("请输入正确的目录或目录名")
+
+
+
 
     elif user[0] == "askzj":
         print('ls\ntimenow\nwget\ncd\ncolor\n')
@@ -57,6 +68,16 @@ while True:
             wget.download(user[1], allpath)
         except Exception as e:
             print(f'An error occurred: {e}')
-
+    elif user[0]=="dc":
+        print(' _______  _______           _______  _______      _______  _______  _______ ')
+        print("(  ____ )(  ___  )|\     /|(  ____ \(  ____ )    (  ___  )(  ____ \(  ____ \ ")
+        print('| (    )|| (   ) || )   ( || (    \/| (    )|    | (   ) || (    \/| (    \/')
+        print('|| (____)|| |   | || | _ | || (__    | (____)|    | |   | || (__    | (__    ')
+        print('|  _____)| |   | || |( )| ||  __)   |     __)    | |   | ||  __)   |  __)   ')
+        print('| (      | |   | || || || || (      | (\ (       | |   | || (      | (      ')
+        print('| )      | (___) || () () || (____/\| ) \ \__    | (___) || )      | )      ')
+        print("|/       (_______)(_______)(_______/|/   \__/    (_______)|/       |/       ")
+        time.sleep(0.5)
+        break
     else:
         print("War.!Unknow command please ask for zj or input askzj")
