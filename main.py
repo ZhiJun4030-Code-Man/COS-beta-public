@@ -2,7 +2,7 @@ import os.path
 import time
 import zj_toolkit
 import wget
-
+import shelve
 allpath = os.getcwd()
 down = 'https://i-440.wwentua.com:446/01202000159054184bb/2024/01/20/c306a13e928748f57503d5b25475698c.7z?st=Ah3UANe4Ji7FlOw8Y1uK6Q&e=1705757596&b=Ax5aCQhlVDAAPF5mBCYOf1VuD31QZgt3&fi=159054184&pid=223-88-51-79&up=2&mp=0&co=0'
 colist=["ls","wget","askzj","cd","dc"]
@@ -32,9 +32,19 @@ print("Hello World!")
 time.sleep(2)
 zj_toolkit.cicon(False, 0)
 time.sleep(2)
-print("Let's start")
+print("Let's begin")
 time.sleep(2)
 
+if os.path.exists("userinfo.bak")==False and os.path.exists("userinfo.dir")==False and os.path.exists("userinfo.dat")==False:
+    usn=input("Who're you?:")
+    passwd=input("passwd:")
+    info={"name":usn,"password":passwd}
+    with shelve.open('userinfo') as data:
+        data['name'] = info["name"]
+        data['password'] = info["password"]
+else:
+    with shelve.open('userinfo') as data:
+        print("Welcome!",data["name"])
 while True:
     user = input(os.getcwd() + ">>>:").split()
     if len(user) == 0:
