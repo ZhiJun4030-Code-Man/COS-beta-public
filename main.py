@@ -37,8 +37,9 @@ time.sleep(2)
 
 while True:
     user = input(os.getcwd() + ">>>:").split()
-
-    if len(user) >= 1 and user[0]=="ls":
+    if len(user) == 0:
+        continue
+    elif len(user) >= 1 and user[0]=="ls":
         print(os.listdir())
 
     elif len(user) == 0:
@@ -56,10 +57,6 @@ while True:
                 except Exception as e:
                     print(e)
                     print("请输入正确的目录或目录名")
-
-
-
-
     elif user[0] == "askzj":
         print('ls\ntimenow\nwget\ncd\ncolor\n')
 
@@ -79,5 +76,4 @@ while True:
         print("|/       (_______)(_______)(_______/|/   \__/    (_______)|/       |/       ")
         time.sleep(0.5)
         break
-    else:
-        print("War.!Unknow command please ask for zj or input askzj")
+
