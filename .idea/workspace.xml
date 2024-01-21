@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7670952b-e842-46a7-8265-fce79f1660d5" name="更改" comment="New">
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +32,7 @@
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
         <option name="accountId" value="30687a0f-eda0-4470-bb3d-418ce9f1b07a" />
-        <option name="url" value="https://github.com/ZhiJun4030-Code-Man/COS_Beta.git" />
+        <option name="url" value="https://github.com/ZhiJun4030-Code-Man/COS-Beta-Pu.git" />
       </UrlAndAccount>
     </option>
   </component>
@@ -320,7 +320,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705800224013</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="New">
+      <option name="closed" value="true" />
+      <created>1705815585102</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1705815585102</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
