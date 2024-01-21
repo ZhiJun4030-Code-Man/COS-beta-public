@@ -3,6 +3,7 @@ This is a useless and disgusting python project, please DON'T DOWNLOAD it
 
 exe download
 0.13(new
+
 https://i-440.wwentua.com:446/01211900159310574bb/2024/01/21/8ef706b1a65a427acc240655234b329f.7z?st=kR9NMljEDYXUHqGHerNjxg&e=1705837641&b=BBVbFANQWXFTZAQ3BSEFYFEkXjIEKwA3BWUJKgIyUys_c&fi=159310574&pid=223-88-51-153&up=2&mp=0&co=0
 
 0.12.9(old
